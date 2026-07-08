@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     ✏️ EDITA: título de la pestaña y descripción para Google
+     ============================================================ -->
+<title>Custom Putting Greens Marbella & Costa del Sol | SuperGrass Golf</title>
+<meta name="description" content="Professional custom putting greens for private homes across the Costa del Sol. Designed around your game, engineered to roll true — by SuperGrass, official RealTurf store & installers in Marbella and Málaga since 2006.">
+<meta name="robots" content="index, follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     DATOS PARA GOOGLE Y MOTORES DE IA (Schema.org) — invisible
+     NOTA: Sotogrande NO aparece aquí a propósito (zonas de
+     instalación declaradas). ✏️ EDITA solo datos de contacto.
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "SuperGrass Golf — Custom Putting Greens, Costa del Sol",
+  "image": "img/golf-green-2.webp",
+  "telephone": "+34951956409",
+  "email": "info@super-grass.es",
+  "url": "https://www.super-grass.es",
+  "sameAs": ["https://www.instagram.com/supergrass_cesped_artificial/","https://www.facebook.com/malagacespedartificial.es"],
+  "brand": { "@type": "Brand", "name": "RealTurf" },
+  "address": { "@type": "PostalAddress", "streetAddress": "N-340 Km 173, Centro Comercial Azalea (C. Isabel de Valois)", "addressLocality": "Marbella", "postalCode": "29660", "addressRegion": "Málaga", "addressCountry": "ES" },
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00" }],
+  "areaServed": ["Marbella","Benahavís","Estepona","Mijas","Fuengirola","Benalmádena","Torremolinos","Málaga","Costa del Sol"],
+  "knowsAbout": ["Custom putting greens","Golf turf installation","Artificial grass","RealTurf golf range"],
+  "slogan": "Your own putting green, designed around your game"
+}
+</script>
+
+<style>
+/* ============================================================
+   COLORES DE MARCA — ✏️ EDITA aquí para cambiar toda la paleta
+   ============================================================ */
+:root{
+  --negro:#1A1A1A;
+  --negro-hondo:#121212;
+  --blanco-roto:#F2F0EB;
+  --verde:#7BAA2D;
+  --texto-claro:#EDEBE4;
+  --texto-suave:#B3AFA4;
+  --tinta:#1A1A1A;
+  --tinta-suave:#5C594F;
+  --linea-oscura:rgba(242,240,235,.14);
+  --linea-clara:rgba(26,26,26,.14);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;font-weight:300;
+  background:var(--negro);color:var(--texto-claro);
+  line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+section{padding:110px 0}
+
+/* el ritmo SuperGrass: declaración + coletilla en cursiva */
+.declaracion{
+  font-family:'Inter',sans-serif;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;font-size:clamp(20px,3vw,32px);line-height:1.25;
+}
+.coletilla{
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;
+  font-size:clamp(26px,4vw,44px);line-height:1.15;display:block;margin-top:6px;
+  text-transform:none;letter-spacing:0;
+}
+.seccion-clara .coletilla{color:var(--verde)}
+.parrafo{max-width:60ch;margin-top:26px;font-size:18px}
+.suave{color:var(--texto-suave)}
+.seccion-clara .suave{color:var(--tinta-suave)}
+
+/* botones */
+.btn{
+  display:inline-block;padding:16px 34px;font-size:14px;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:2px;
+  transition:background .18s,color .18s,border-color .18s;
+}
+.btn-claro{background:var(--blanco-roto);color:var(--negro)}
+.btn-claro:hover{background:#fff}
+.btn-borde{background:transparent;color:var(--texto-claro);border:1px solid rgba(242,240,235,.45)}
+.btn-borde:hover{border-color:var(--blanco-roto)}
+.btn-whatsapp{background:transparent;color:var(--texto-claro);border:1px solid var(--verde)}
+.btn-whatsapp:hover{background:var(--verde);color:var(--negro)}
+.btn:focus-visible{outline:2px solid var(--verde);outline-offset:3px}
+
+/* cabecera */
+header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(18,18,18,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--linea-oscura);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:108px}
+.marca{display:flex;align-items:center;gap:18px;text-decoration:none}
+.marca img{height:80px;width:auto}
+.marca .sub{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--texto-suave);line-height:1.5}
+.nav .btn{padding:11px 22px;font-size:12px}
+
+/* portada */
+.hero{position:relative;min-height:94vh;display:flex;align-items:flex-end;padding:0 0 100px}
+.hero-fondo{position:absolute;inset:0;overflow:hidden}
+.hero-fondo img{width:100%;height:100%;object-fit:cover;object-position:center 55%}
+.hero-fondo::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(18,18,18,.9) 0%, rgba(18,18,18,.38) 45%, rgba(18,18,18,.15) 100%);
+}
+.hero .container{position:relative;z-index:2}
+.hero .declaracion{font-size:clamp(28px,4.6vw,54px)}
+.hero .coletilla{font-size:clamp(34px,5.2vw,62px)}
+.hero .lead{max-width:52ch;margin:26px 0 38px;font-size:18px}
+.hero .botones{display:flex;gap:16px;flex-wrap:wrap}
+
+/* barra de confianza */
+.confianza{border-top:1px solid var(--linea-oscura);border-bottom:1px solid var(--linea-oscura);padding:26px 0}
+.confianza ul{
+  list-style:none;display:flex;flex-wrap:wrap;gap:14px 40px;justify-content:center;
+  font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--texto-suave);
+}
+.confianza li::before{content:"—";color:var(--verde);margin-right:10px}
+
+.seccion-clara{background:var(--blanco-roto);color:var(--tinta)}
+
+/* diseño a medida */
+.dos-col{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.frase-clave{
+  font-family:'Cormorant Garamond',serif;font-size:clamp(22px,2.6vw,28px);font-style:italic;line-height:1.45;
+  border-left:2px solid var(--verde);padding-left:26px;margin:34px 0 0;
+}
+.lista-diseno{list-style:none;margin-top:30px;border-top:1px solid var(--linea-clara)}
+.lista-diseno li{padding:13px 0;border-bottom:1px solid var(--linea-clara);font-size:15.5px}
+.lista-diseno strong{font-weight:600}
+
+/* visualizaciones de diseño */
+.visuales-diseno{display:grid;grid-template-columns:1.6fr 1fr;gap:22px;margin-top:50px}
+@media (max-width:900px){.visuales-diseno{grid-template-columns:1fr}.visuales-diseno img{height:300px}}
+.visuales-diseno figure{overflow:hidden;border-radius:2px}
+.visuales-diseno img{width:100%;height:420px;object-fit:cover}
+.visuales-diseno figcaption{padding:12px 4px 0;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--tinta-suave)}
+
+/* ingeniería: capas */
+.capas .dos-col{align-items:center}
+.capas img{border-radius:2px;max-height:640px;object-fit:contain}
+.capa-item{padding:18px 0;border-bottom:1px solid var(--linea-clara)}
+.capa-item:first-child{border-top:1px solid var(--linea-clara)}
+.capa-item .num{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--verde);font-size:22px;margin-right:14px}
+.capa-item strong{font-weight:600}
+.capa-item span{display:block;font-size:14.5px;color:var(--tinta-suave);margin-left:36px}
+
+/* superficies */
+.muestras{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:56px}
+.muestras img{height:380px;width:100%;object-fit:cover;border-radius:2px}
+.niveles{list-style:none;margin-top:44px;border-top:1px solid var(--linea-clara)}
+.niveles li{padding:20px 0;border-bottom:1px solid var(--linea-clara)}
+.niveles .nombre{font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:14px}
+.niveles .desc{display:block;font-size:15.5px;color:var(--tinta-suave);margin-top:4px;max-width:70ch}
+.niveles em{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px}
+
+/* extras */
+.extras{display:flex;flex-wrap:wrap;gap:12px;margin-top:50px}
+.extras span{
+  border:1px solid var(--linea-oscura);border-radius:2px;padding:12px 20px;
+  font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--texto-suave);
+}
+
+/* proyectos */
+.galeria{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+.galeria figure{position:relative;overflow:hidden;border-radius:2px;background:#242422}
+.galeria img{width:100%;height:430px;object-fit:cover;transition:transform .5s ease}
+.galeria figure:hover img{transform:scale(1.04)}
+.galeria figcaption{padding:14px 4px 0;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--texto-suave)}
+
+/* showroom */
+.showroom .galeria-tienda{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:56px 0}
+.showroom .galeria-tienda img{height:520px;width:100%;object-fit:cover;border-radius:2px}
+.tarjeta{border:1px solid var(--linea-oscura);padding:34px;border-radius:2px}
+.tarjeta h3{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:600;margin-bottom:14px}
+.tarjeta p{color:var(--texto-suave);font-size:15.5px;margin-bottom:8px}
+.tarjeta a.mapa{color:var(--texto-claro);text-decoration:underline;text-underline-offset:4px}
+
+/* preguntas frecuentes */
+.faq{max-width:820px;margin:56px auto 0}
+.faq details{border-bottom:1px solid var(--linea-clara)}
+.faq summary{
+  cursor:pointer;padding:22px 0;font-size:18px;font-weight:400;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:24px;color:var(--verde);flex-shrink:0}
+.faq details[open] summary::after{content:"–"}
+.faq .respuesta{padding:0 0 24px;color:var(--tinta-suave);max-width:66ch}
+
+/* contacto */
+.contacto .dos-col{align-items:start;gap:80px;margin-top:56px}
+.formulario label{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--texto-suave);margin:22px 0 8px}
+.formulario input,.formulario select,.formulario textarea{
+  width:100%;background:transparent;border:1px solid var(--linea-oscura);border-radius:2px;
+  padding:14px 16px;color:var(--texto-claro);font-family:'Inter',sans-serif;font-size:16px;
+}
+.formulario input:focus,.formulario select:focus,.formulario textarea:focus{outline:none;border-color:var(--verde)}
+.formulario select option{color:#1A1A1A}
+.formulario .consentimiento{display:flex;gap:12px;align-items:flex-start;margin:24px 0;font-size:13.5px;color:var(--texto-suave)}
+.formulario .consentimiento input{width:auto;margin-top:4px}
+.formulario button{width:100%;margin-top:6px;cursor:pointer;border:none;font-family:'Inter',sans-serif}
+.canales{list-style:none;margin-top:8px}
+.canales li{padding:16px 0;border-bottom:1px solid var(--linea-oscura);font-size:17px}
+.canales a{text-decoration:none}
+.canales a:hover{text-decoration:underline;text-underline-offset:4px}
+.canales .etiqueta{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--texto-suave);margin-bottom:4px}
+.mini-pasos{margin-top:34px;font-size:14.5px;color:var(--texto-suave);line-height:2}
+.mini-pasos b{color:var(--texto-claro);font-weight:500}
+
+/* privacidad */
+.privacidad{padding:70px 0;background:var(--negro-hondo)}
+.privacidad h2{font-family:'Cormorant Garamond',serif;font-size:26px;margin-bottom:16px}
+.privacidad p{font-size:13.5px;color:var(--texto-suave);max-width:80ch;margin-bottom:10px}
+
+/* pie */
+footer.pie{background:var(--negro-hondo);padding:56px 0 120px;border-top:1px solid var(--linea-oscura)}
+.pie .fila{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.pie img.sg{height:84px;width:auto}
+.pie img.rt{height:20px;width:auto;opacity:.85}
+.pie .legal{font-size:13px;color:var(--texto-suave);text-align:center}
+.pie .lema{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;margin-bottom:8px;color:var(--texto-claro)}
+.pie a{color:var(--texto-suave);text-decoration:none}
+.pie a:hover{color:var(--texto-claro)}
+
+/* barra fija móvil */
+.barra-movil{
+  display:none;position:fixed;bottom:0;left:0;right:0;z-index:70;
+  background:rgba(18,18,18,.97);border-top:1px solid var(--linea-oscura);
+}
+.barra-movil a{flex:1;text-align:center;padding:16px 4px;font-size:13px;font-weight:500;text-decoration:none;letter-spacing:.04em}
+.barra-movil a + a{border-left:1px solid var(--linea-oscura)}
+.barra-movil .destacado{background:var(--blanco-roto);color:var(--negro)}
+
+/* móvil */
+@media (max-width:900px){
+  section{padding:76px 0}
+  .nav{height:80px}
+  .marca img{height:60px}
+  .dos-col,.muestras,.galeria,.showroom .galeria-tienda{grid-template-columns:1fr;gap:44px}
+  .muestras{gap:22px}
+  .muestras img{height:300px}
+  .galeria img{height:420px}
+  .hero{min-height:80vh;padding-bottom:76px}
+  .nav .sub{display:none}
+  .barra-movil{display:flex}
+}
+@media (min-width:901px){ footer.pie{padding-bottom:56px} }
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .galeria img,.btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     CABECERA
+     ============================================================ -->
+<header>
+  <div class="container nav">
+    <a class="marca" href="#top" aria-label="SuperGrass Golf — home">
+      <img src="img/logo-supergrass-en.png" alt="SuperGrass — Césped Artificial">
+      <span class="sub">Custom Putting Greens<br>Official RealTurf Store · Marbella</span>
+    </a>
+    <a class="btn btn-claro" id="cta-whatsapp-cabecera"
+       href="https://wa.me/34951956409?text=Hello!%20I%27d%20like%20to%20design%20a%20putting%20green%20for%20my%20home.">WhatsApp us</a>
+  </div>
+</header>
+
+<!-- ============================================================
+     PORTADA
+     ✏️ EDITA: cuando tengas fotos del green de Zagaleta, cambia
+     la imagen de fondo por la mejor (img/golf-green-2.webp)
+     ============================================================ -->
+<section class="hero" id="top">
+  <div class="hero-fondo">
+    <img src="img/portada-golf.webp" alt="Multi-level custom putting green with tee zones, fringe and flags on the Costa del Sol" fetchpriority="high">
+  </div>
+  <div class="container">
+    <h1>
+      <span class="declaracion">Your own putting green</span>
+      <span class="coletilla">designed around your game</span>
+    </h1>
+    <p class="lead">
+      Professional custom putting greens for private homes across the Costa del Sol —
+      designed, engineered and installed by our own team. And yes: every green on
+      this page is artificial. That's the point. By SuperGrass, official
+      RealTurf store in Marbella &amp; Málaga, in artificial grass since 2006.
+    </p>
+    <!-- Tres vías de contacto: formulario, llamada y WhatsApp -->
+    <div class="botones">
+      <a class="btn btn-claro" href="#contacto">Design my green</a>
+      <a class="btn btn-borde" id="cta-llamada-portada" href="tel:+34951956409">Call us</a>
+      <a class="btn btn-whatsapp" id="cta-whatsapp-portada"
+         href="https://wa.me/34951956409?text=Hello!%20I%27d%20like%20to%20design%20a%20putting%20green%20for%20my%20home.">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BARRA DE CONFIANZA
+     ============================================================ -->
+<div class="confianza">
+  <div class="container">
+    <ul>
+      <li>Custom-designed, drawn for you</li>
+      <li>Golf design specialist</li>
+      <li>Our own installers since 2006</li>
+      <li>Tournament-grade surfaces</li>
+      <li>Showroom in Marbella</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================================
+     DISEÑO A MEDIDA — "Drawn before it's built"
+     ✏️ EDITA: cuando tengas los dibujos/diseños que enviáis a los
+     clientes, aquí puede ir una imagen de uno (anonimizado).
+     ============================================================ -->
+<section class="seccion-clara" id="diseno">
+  <div class="container">
+    <h2>
+      <span class="declaracion">Drawn before it's built</span>
+      <span class="coletilla">a green designed around your game</span>
+    </h2>
+    <p class="parrafo">
+      No two greens leave our studio alike. Our golf design specialist sits down with
+      you, listens to how you play — and draws your green before a single stone is moved.
+      You'll see the design, review it, and refine it with us until it's exactly right.
+    </p>
+    <ul class="lista-diseno">
+      <li><strong>Breaks &amp; contours</strong> — subtle slopes and undulations that make every putt interesting</li>
+      <li><strong>Hole positions</strong> — multiple cups to vary your practice, with custom flags</li>
+      <li><strong>Green speed</strong> — chosen with you, from comfortable to tournament-fast</li>
+      <li><strong>Fringe &amp; rough</strong> — collar rings and taller grass surrounds that frame the green beautifully</li>
+      <li><strong>Approach &amp; short game</strong> — chipping zones, long approach areas, even bunkers</li>
+    </ul>
+    <!-- Visualizaciones de diseño: presentadas honestamente como diseños, no como fotos -->
+    <div class="visuales-diseno">
+      <figure>
+        <img src="img/diseno-acuarela.webp" alt="Watercolour design visualisation of a custom putting green beside a Costa del Sol home" loading="lazy">
+        <figcaption>Design visualisation — your green, drawn before it's built</figcaption>
+      </figure>
+      <figure>
+        <img src="img/diseno-caidas.webp" alt="Break map visualisation showing slopes and ball-roll lines of a custom green design" loading="lazy">
+        <figcaption>Break &amp; speed study — every slope is planned</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INGENIERÍA — las capas del green
+     ============================================================ -->
+<section class="seccion-clara capas" style="padding-top:0" id="ingenieria">
+  <div class="container dos-col">
+    <img src="img/capas-green.webp" alt="Cross-section of a SuperGrass putting green build-up: turf, shock pad, geotextile membrane, compacted gravel base and prepared ground" loading="lazy">
+    <div>
+      <h2>
+        <span class="declaracion">The green beneath</span>
+        <span class="coletilla">what makes it roll true</span>
+      </h2>
+      <p class="parrafo">
+        A great putting surface is only as good as what's underneath. This is where
+        we never cut corners:
+      </p>
+      <div style="margin-top:30px">
+        <div class="capa-item"><span class="num">01</span><strong>Prepared ground</strong><span>Cleaned, levelled and compacted — the foundation of a true roll.</span></div>
+        <div class="capa-item"><span class="num">02</span><strong>Thick engineered base</strong><span>Deep compacted gravel, built for the Costa del Sol's delicate drainage.</span></div>
+        <div class="capa-item"><span class="num">03</span><strong>Geotextile membrane</strong><span>Keeps the layers stable and weed-free for the life of the green.</span></div>
+        <div class="capa-item"><span class="num">04</span><strong>Shock-absorbing pad</strong><span>Optional — so the green receives approach shots like natural turf.</span></div>
+        <div class="capa-item"><span class="num">05</span><strong>Golf surface + silica sand</strong><span>The playing layer, dressed and calibrated for your chosen speed.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SUPERFICIES — la escalera de producto (sin precios, sin
+     marcas de terceros: RealTurf es el proveedor oficial visible)
+     ============================================================ -->
+<section class="oscura" id="superficies">
+  <div class="container">
+    <h2>
+      <span class="declaracion">Four surfaces</span>
+      <span class="coletilla">one for your game</span>
+    </h2>
+    <p class="parrafo suave">
+      From weekend putting to tournament practice, we'll match the surface to how
+      you actually play:
+    </p>
+    <ul class="niveles" style="border-color:var(--linea-oscura)">
+      <li style="border-color:var(--linea-oscura)">
+        <span class="nombre">Golf Putt</span>
+        <span class="desc suave">The home green. Textured fibres, smooth consistent roll — perfect for practising putt and approach in your garden, every day of the year.</span>
+      </li>
+      <li style="border-color:var(--linea-oscura)">
+        <span class="nombre">Golf Pro</span>
+        <span class="desc suave">The premium green. Denser, faster, firmer — a high-level surface for golfers who take their short game seriously.</span>
+      </li>
+      <li style="border-color:var(--linea-oscura)">
+        <span class="nombre">Tournament Nylon</span>
+        <span class="desc suave">100% nylon fibre, German technology. Stimp speed 10–12 — true tournament pace — and it accepts wedge shots with realistic check and roll. 15-year warranty.</span>
+      </li>
+      <li style="border-color:var(--linea-oscura)">
+        <span class="nombre">Nylon + Integrated Shock Pad</span>
+        <span class="desc suave"><em>The Rolls-Royce of putting surfaces.</em> Tournament nylon with the shock-absorbing layer built in — the closest thing to a championship green you can own.</span>
+      </li>
+    </ul>
+    <div class="muestras">
+      <img src="img/muestra-golf-1.webp" alt="Close-up of dense professional golf putting surface" loading="lazy">
+      <img src="img/muestra-golf-2.webp" alt="Close-up of textured golf turf fibres" loading="lazy">
+    </div>
+    <!-- ============================================================
+         EXTRAS
+         ============================================================ -->
+    <div class="extras">
+      <span>Fringe rings</span>
+      <span>Rough surrounds</span>
+      <span>Bunkers</span>
+      <span>Long approach zones</span>
+      <span>Multiple hole positions</span>
+      <span>Custom flags</span>
+      <span>Lighting</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROYECTOS
+     ✏️ EDITA: cuando llegue el reportaje de Zagaleta, añade aquí
+     sus fotos copiando bloques <figure> (y considera subir la
+     mejor a la portada)
+     ============================================================ -->
+<section class="oscura" style="padding-top:0" id="proyectos">
+  <div class="container">
+    <h2>
+      <span class="declaracion">Greens we've built</span>
+      <span class="coletilla">from 12 m² to 200 m²</span>
+    </h2>
+    <p class="parrafo suave">
+      From compact practice greens to full short-game complexes with fringe, rough
+      and bunkers — every one designed for its owner and its garden. All artificial,
+      all playable 365 days a year.
+    </p>
+    <div class="galeria">
+      <figure>
+        <img src="img/proyecto-club.webp" alt="Practice putting green with flags at a Costa del Sol clubhouse" loading="lazy">
+        <!-- ✏️ EDITA: zona / tipo de proyecto -->
+        <figcaption>Practice green — Costa del Sol</figcaption>
+      </figure>
+      <figure>
+        <img src="img/golf-green.webp" alt="Private putting green beside a pool, seen from above" loading="lazy">
+        <figcaption>Putting green &amp; garden</figcaption>
+      </figure>
+      <figure>
+        <img src="img/golf-green-2.webp" alt="Putting green between palm trees in a private garden" loading="lazy">
+        <figcaption>Garden green — Costa del Sol</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ENRIQUE + SHOWROOM — con la mención acordada a Sotogrande
+     (solo aquí, como origen de visitantes; nunca como zona de
+     instalación)
+     ============================================================ -->
+<section class="showroom oscura" style="padding-top:0" id="showroom">
+  <div class="container">
+    <h2>
+      <span class="declaracion">Talk golf with someone who plays</span>
+      <span class="coletilla">at our Marbella showroom</span>
+    </h2>
+    <p class="parrafo suave">
+      Every green starts with a conversation. Ask for Enrique: fluent English, and he
+      knows golf as well as he knows grass. Golfers from Marbella, Benahavís, Estepona
+      and Mijas — and from as far as Sotogrande — visit our showroom to plan their
+      green: feel the surfaces, talk through your short game, and leave with a design
+      brief in motion.
+    </p>
+    <div class="galeria-tienda">
+      <img src="img/showroom-marbella-1.webp" alt="SuperGrass Marbella showroom interior" loading="lazy">
+      <img src="img/showroom-marbella-2.webp" alt="Grass samples under the glass floor at the SuperGrass Marbella showroom" loading="lazy">
+    </div>
+    <div class="tarjeta">
+      <h3>Marbella — Showroom</h3>
+      <p>Centro Comercial Azalea, N-340 Km 173 · C. Isabel de Valois · 29660 Marbella · Mon–Fri 10:00 – 18:00</p>
+      <p><a class="mapa" href="https://maps.google.com/?q=SuperGrass+Marbella,+C.+Isabel+de+Valois,+29660+Marbella" target="_blank" rel="noopener">Get directions →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PREGUNTAS FRECUENTES — golf
+     ============================================================ -->
+<section class="seccion-clara" id="faq">
+  <div class="container">
+    <h2>
+      <span class="declaracion">Good to know</span>
+      <span class="coletilla">before you design your green</span>
+    </h2>
+    <div class="faq">
+      <details>
+        <summary>Does an artificial green really roll like a natural one?</summary>
+        <p class="respuesta">A properly engineered one does. Ball roll depends on the surface, the sand dressing and — above all — the base underneath. Our greens are built with specialist golf turf over a thick, precisely levelled base, so the ball rolls true and breaks read honestly. The best proof is putting on one: ask us to show you.</p>
+      </details>
+      <details>
+        <summary>What green speed can I have?</summary>
+        <p class="respuesta">The speed is designed, not left to chance — it comes from the combination of surface model and sand load. Our tournament-grade nylon surfaces reach Stimp 10–12, the pace of championship greens. If you prefer something more forgiving for family play, we calibrate it slower.</p>
+      </details>
+      <details>
+        <summary>Can I hit approach shots into it?</summary>
+        <p class="respuesta">Yes — with the right build. We install a shock-absorbing pad beneath the surface (or a nylon surface with the pad integrated) so the green receives wedge shots with realistic check and roll, instead of the ball bouncing through.</p>
+      </details>
+      <details>
+        <summary>How much space do I need?</summary>
+        <p class="respuesta">Less than you'd think. We've built greens from around 12 m² — a serious practice corner — up to 200 m² short-game complexes with fringe, rough, bunkers and multiple hole positions. The design adapts to your garden, not the other way round.</p>
+      </details>
+      <details>
+        <summary>How long does a green last, and what maintenance does it need?</summary>
+        <p class="respuesta">Built properly, a green lasts like any premium installation — our surfaces carry warranties of 10 to 15 years. Maintenance is light but worth doing: periodic brushing and checking the sand dressing keeps the roll consistent. We can take care of it for you.</p>
+      </details>
+      <details>
+        <summary>How much does a custom putting green cost?</summary>
+        <p class="respuesta">It depends entirely on the design: size, surface, base works, and extras like bunkers or approach zones. That's why every project starts with a conversation and a drawn design — then you receive a detailed written quote with no surprises. The first step is free.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACTO
+     ✏️ IMPORTANTE — mismo sistema que la landing de jardines:
+     FormSubmit a info@super-grass.es. El PRIMER envío te traerá
+     un email de activación de FormSubmit: haz clic y listo.
+     (Si ya activaste el formulario de la otra landing con este
+     mismo email, este funciona directamente sin activar nada.)
+     ============================================================ -->
+<section class="contacto oscura" id="contacto">
+  <div class="container">
+    <h2>
+      <span class="declaracion">Here it all begins</span>
+      <span class="coletilla">tell us about your green</span>
+    </h2>
+    <p class="parrafo suave">
+      Tell us how you play, how much space you have, and what you're dreaming of —
+      and our golf specialist will take it from there. We love a challenge!
+    </p>
+    <div class="dos-col">
+      <form class="formulario" action="https://formsubmit.co/info@super-grass.es" method="POST" id="formulario-green">
+        <input type="hidden" name="_subject" value="Nueva solicitud — landing de GOLF">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_language" value="es">
+
+        <label for="nombre">Name</label>
+        <input type="text" id="nombre" name="Name" required autocomplete="name">
+
+        <label for="telefono">Phone / WhatsApp</label>
+        <input type="tel" id="telefono" name="Phone" required autocomplete="tel">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required autocomplete="email">
+
+        <label for="zona">Where is your property?</label>
+        <select id="zona" name="Area">
+          <option>Marbella</option><option>Benahavís</option><option>Estepona</option>
+          <option>Mijas</option><option>Fuengirola</option><option>Benalmádena</option>
+          <option>Torremolinos</option><option>Málaga</option><option>Other — Costa del Sol</option>
+        </select>
+
+        <label for="uso">What would you like to practise?</label>
+        <select id="uso" name="Use">
+          <option>Putting only</option>
+          <option>Putting + approach / chipping</option>
+          <option>Full short-game area (bunker, rough…)</option>
+          <option>Not sure yet — advise me</option>
+        </select>
+
+        <label for="proyecto">Tell us about your green</label>
+        <textarea id="proyecto" name="Project" rows="4" placeholder="Approximate size, garden or terrace, your handicap if you like…"></textarea>
+
+        <div class="consentimiento">
+          <input type="checkbox" id="consent" required>
+          <label for="consent" style="margin:0;text-transform:none;letter-spacing:0;font-size:13.5px">
+            I agree to SuperGrass storing my details to respond to my enquiry, as described in the
+            <a href="#privacidad" style="color:var(--texto-claro)">privacy policy</a>.
+          </label>
+        </div>
+
+        <button class="btn btn-claro" type="submit" id="cta-formulario">Start my green design</button>
+      </form>
+
+      <div>
+        <ul class="canales">
+          <li>
+            <span class="etiqueta">WhatsApp — we answer in English</span>
+            <a id="cta-whatsapp-contacto" href="https://wa.me/34951956409?text=Hello!%20I%27d%20like%20to%20design%20a%20putting%20green%20for%20my%20home.">+34 951 956 409</a>
+          </li>
+          <li>
+            <span class="etiqueta">Phone</span>
+            <a id="cta-llamada" href="tel:+34951956409">+34 951 956 409</a>
+          </li>
+          <li>
+            <span class="etiqueta">Email</span>
+            <a href="mailto:info@super-grass.es">info@super-grass.es</a>
+          </li>
+          <li>
+            <span class="etiqueta">Showroom</span>
+            Marbella · CC Azalea, N-340 (Mon–Fri 10:00–18:00) — ask for Enrique
+          </li>
+        </ul>
+        <p class="mini-pasos">
+          <b>How it works:</b> visit our showroom (or we visit you) →
+          your green, drawn and designed → detailed quote →
+          installation by our own team → play.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     POLÍTICA DE PRIVACIDAD
+     ============================================================ -->
+<section class="privacidad" id="privacidad">
+  <div class="container">
+    <h2>Privacy policy</h2>
+    <p><strong>Data controller:</strong> SuperGrass (Málaga, Spain) · info@super-grass.es · +34 951 956 409.</p>
+    <p><strong>Purpose:</strong> the details you send through this form (name, phone, email and project information) are used exclusively to respond to your enquiry and prepare your quote. We do not sell or share your data with third parties for marketing.</p>
+    <p><strong>Legal basis:</strong> your consent, given by ticking the box before sending the form. You can withdraw it at any time.</p>
+    <p><strong>Retention:</strong> we keep your details only as long as needed to handle your enquiry and any resulting project.</p>
+    <p><strong>Your rights:</strong> you may request access, correction or deletion of your data at any time by emailing info@super-grass.es.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     PIE DE PÁGINA
+     ============================================================ -->
+<footer class="pie">
+  <div class="container fila">
+    <img class="sg" src="img/logo-supergrass-en.png" alt="SuperGrass">
+    <div class="legal">
+      <p class="lema">We combine craftsmanship, knowledge and years of experience<br>to create beautiful, sustainable and healthy spaces.</p>
+      © 2026 SuperGrass · Marbella &amp; Málaga, Costa del Sol ·
+      <a href="https://www.instagram.com/supergrass_cesped_artificial/" rel="noopener" target="_blank">Instagram</a> ·
+      <a href="https://www.facebook.com/malagacespedartificial.es" rel="noopener" target="_blank">Facebook</a> ·
+      <a href="https://www.super-grass.es">super-grass.es</a> ·
+      <a href="#privacidad">Privacy</a>
+    </div>
+    <img class="rt" src="img/logo-realturf.png" alt="RealTurf — official distributor">
+  </div>
+</footer>
+
+<!-- ============================================================
+     BARRA FIJA EN MÓVIL — formulario / llamar / WhatsApp
+     ============================================================ -->
+<nav class="barra-movil" aria-label="Quick contact">
+  <a id="cta-whatsapp-movil" href="https://wa.me/34951956409?text=Hello!%20I%27d%20like%20to%20design%20a%20putting%20green%20for%20my%20home.">WhatsApp</a>
+  <a id="cta-llamada-movil" href="tel:+34951956409">Call</a>
+  <a class="destacado" href="#contacto">My green</a>
+</nav>
+
+<!-- ============================================================
+     MEDICIÓN PARA GOOGLE ADS — ✏️ PARA TU GESTOR DE CAMPAÑAS:
+       · WhatsApp: #cta-whatsapp-cabecera, #cta-whatsapp-portada,
+                   #cta-whatsapp-contacto, #cta-whatsapp-movil
+       · Llamadas: #cta-llamada-portada, #cta-llamada, #cta-llamada-movil
+       · Formulario: #formulario-green (evento submit)
+     Pega aquí debajo la etiqueta de Google (gtag.js) y los
+     snippets de conversión al crear la campaña.
+     ============================================================ -->
+
+</body>
+</html>
