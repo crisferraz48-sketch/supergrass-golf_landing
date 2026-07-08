@@ -1,0 +1,54 @@
+================================================================
+  SUPERGRASS — LANDING PAGE DE GOLF EN INGLÉS
+  Guía rápida de uso y edición
+================================================================
+
+QUÉ HAY EN ESTA CARPETA
+-----------------------
+  index.html   -> la página completa (un solo archivo)
+  img/         -> fotos, muestras, capas y logos optimizados
+  LEEME.txt    -> esta guía
+
+CÓMO VERLA / EDITARLA
+---------------------
+  Igual que la landing de jardines: doble clic en index.html
+  para verla (la carpeta img siempre al lado), y para editar
+  busca los comentarios "✏️ EDITA" con cualquier editor de texto.
+  Los colores están al principio, con nombres en español.
+
+EL FORMULARIO
+-------------
+  Envía a info@super-grass.es con FormSubmit. Si YA activaste el
+  formulario de la landing de jardines (mismo email), este
+  funciona directamente. Si no, el primer envío te traerá el
+  email de activación: un clic y listo. Los mensajes de esta
+  página llegan con el asunto "Nueva solicitud — landing de GOLF"
+  para que los distingas.
+
+DÓNDE PUBLICARLA
+----------------
+  - Si compras dominio propio (ej. puttinggreensmarbella.com):
+    sube index.html + img/ a la raíz del hosting.
+  - Si va dentro de super-grass.es: súbela a una carpeta /golf/.
+
+CUANDO LLEGUEN LAS FOTOS DE ZAGALETA
+------------------------------------
+  1. Mete las fotos en img/
+  2. En la sección "GREENS WE'VE BUILT", copia bloques <figure>
+     para añadirlas (hay comentario ✏️ indicándolo)
+  3. Valora poner la mejor como fondo de portada (comentario ✏️
+     en la sección PORTADA)
+
+PENDIENTES QUE QUEDARON
+-----------------------
+  - Fotos reales de greens (Zagaleta u otros) para proyectos
+  - Los dibujos/diseños que enviáis a clientes, para ilustrar
+    la sección "Drawn before it's built"
+  - Vídeo de una bola rodando (elemento de conversión top)
+  - Decidir y comprar el dominio
+  - Antes de lanzar Google Ads: activar formulario, probar
+    botones desde el móvil, y darle a tu gestor los
+    identificadores de conversión (comentario al final del HTML)
+
+Cualquier cambio que no te atrevas a hacer, pídemelo.
+================================================================
